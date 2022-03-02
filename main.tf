@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "eu-west-2"
 }
 
 module "vpc" {
@@ -50,7 +50,7 @@ module "ec2_instances" {
 module "website_s3_bucket" {
   source = "./modules/aws-s3-static-website-bucket"
 
-  bucket_name = "robin-test-dec-17-2019"
+  bucket_name = "krk-test-mart-2-2022"
 
   tags = {
     Terraform   = "true"
